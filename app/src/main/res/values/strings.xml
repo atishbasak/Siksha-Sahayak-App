@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Siksha Sahayak</string>
+
+    <string name="heading_one">Quick &amp; Easy Payments</string>
+    <string name="heading_two">Instant Notifications</string>
+    <string name="heading_three">Cashless Payment</string>
+    <string name="heading_fourth">Pay Anywhere</string>
+    <string name="syllabus_course">Syllabus Courses</string>
+    <string name="see_all">See All</string>
+    <string name="skip">Skip</string>
+    <string name="login_quota">Our Mentorship, Your Success</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="continue_login">Continue Login</string>
+    <string name="login">Login or SignUp</string>
+    <string name="or">or</string>
+    <string name="download">Download</string>
+    <string name="notes">Notes</string>
+    <string name="courses">Courses</string>
+    <string name="mentor">1v1 Mentorship</string>
+    <string name="quizzes">Quizzes</string>
+    <string name="animated">Animated Videos</string>
+    <string name="community">Community</string>
+    <string name="testseries">Test Series</string>
+    <string name="doubt">Doubt</string>
+    <string name="progress">Progress</string>
+    <string name="library">Library</string>
+    <string name="help">Help</string>
+    <string name="syllabus">Syllabus</string>
+    <string name="save">Save</string>
+<!--    <string name="save">Save</string>-->
+<!--    <string name="save">Save</string>-->
+    <string name="privacy_policy">By continuing, you agree to our \n Terms of Services Privacy Policy &#x20; &#x20;Content Policy</string>
+    <string name="sample_video_title">Classes,Public and Private access Modifiers in c++</string>
+
+
+
+    //Description
+    <string name="desc_one">Grow your Business By Accepting Card Payments with The New Card Reader</string>
+    <string name="desc_two">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</string>
+    <string name="desc_three">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</string>
+    <string name="desc_fourth">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</string>
+</resources>
