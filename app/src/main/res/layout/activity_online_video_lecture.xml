@@ -178,16 +178,6 @@
             android:text="@string/download" />
     </androidx.cardview.widget.CardView>
 
-    <EditText
-        android:id="@+id/editTextTextMultiLine"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
-        tools:layout_editor_absoluteX="185dp"
-        tools:layout_editor_absoluteY="60dp" />
-
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="390dp"
         android:layout_height="240dp"

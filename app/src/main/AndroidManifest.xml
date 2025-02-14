@@ -13,6 +13,21 @@
         android:theme="@style/Theme.SikshaSahayak"
         tools:targetApi="31">
         <activity
+            android:name=".OnlineLibraryPage"
+            android:exported="false" />
+        <activity
+            android:name=".FilterItemsPage"
+            android:exported="false" />
+        <activity
+            android:name=".FilterItemPage"
+            android:exported="false" />
+        <activity
+            android:name=".FilterModel"
+            android:exported="false" />
+        <activity
+            android:name=".FilterItem"
+            android:exported="false" />
+        <activity
             android:name=".OnlineVideoLecture"
             android:exported="false" />
         <activity

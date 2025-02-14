@@ -17,9 +17,9 @@
     <string name="download">Download</string>
     <string name="notes">Notes</string>
     <string name="courses">Courses</string>
-    <string name="mentor">1v1 Mentorship</string>
+    <string name="mentor">1v1 \n Mentorship</string>
     <string name="quizzes">Quizzes</string>
-    <string name="animated">Animated Videos</string>
+    <string name="animated">Animated \n Videos</string>
     <string name="community">Community</string>
     <string name="testseries">Test Series</string>
     <string name="doubt">Doubt</string>
@@ -28,11 +28,10 @@
     <string name="help">Help</string>
     <string name="syllabus">Syllabus</string>
     <string name="save">Save</string>
-<!--    <string name="save">Save</string>-->
-<!--    <string name="save">Save</string>-->
+    <!--    <string name="save">Save</string>-->
+    <!--    <string name="save">Save</string>-->
     <string name="privacy_policy">By continuing, you agree to our \n Terms of Services Privacy Policy &#x20; &#x20;Content Policy</string>
     <string name="sample_video_title">Classes,Public and Private access Modifiers in c++</string>
-
 
 
     //Description

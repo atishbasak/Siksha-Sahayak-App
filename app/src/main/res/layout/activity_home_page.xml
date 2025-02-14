@@ -11,7 +11,8 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="@string/app_name"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/cardView"
         app:layout_constraintEnd_toStartOf="@+id/imageView2"
         app:layout_constraintHorizontal_bias="0.047"
@@ -21,8 +22,8 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="39dp"
-        android:layout_height="40dp"
+        android:layout_width="29dp"
+        android:layout_height="30dp"
         app:layout_constraintBottom_toBottomOf="@+id/cardView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.947"
@@ -47,7 +48,7 @@
             android:id="@+id/imageView"
             android:layout_width="52dp"
             android:layout_height="52dp"
-            app:srcCompat="@drawable/ic_launcher_background" />
+            app:srcCompat="@drawable/applogo" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -104,7 +105,9 @@
                 app:sliderIndicatorSelectedColor="#5A5A5A"
                 app:sliderIndicatorUnselectedColor="#FFF"
                 app:sliderScrollTimeInSec="2"
-                app:sliderStartAutoCycle="true"/>
+                app:sliderStartAutoCycle="true">
+
+            </com.smarteist.autoimageslider.SliderView>
 
 
         </androidx.cardview.widget.CardView>
@@ -114,7 +117,7 @@
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView"
         android:layout_width="390dp"
-        android:layout_height="80dp"
+        android:layout_height="140dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.476"
@@ -131,15 +134,16 @@
                 android:layout_width="70dp"
                 android:layout_height="80dp"
                 android:layout_marginStart="20dp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:cardCornerRadius="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView4"
                 app:layout_constraintStart_toEndOf="@+id/cardView4"
-                app:layout_constraintTop_toTopOf="parent" >
+                app:layout_constraintTop_toTopOf="parent">
 
-                <TextView
-                    android:id="@+id/textView9"
+                <ImageView
+                    android:id="@+id/imageView22"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/library" />
+                    app:srcCompat="@drawable/library" />
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -150,12 +154,13 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/cardView18"
-                app:layout_constraintTop_toTopOf="parent" >
+                app:layout_constraintTop_toTopOf="parent">
 
                 <TextView
                     android:id="@+id/textView24"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
                     android:text="TextView" />
             </androidx.cardview.widget.CardView>
 
@@ -164,16 +169,17 @@
                 android:layout_width="70dp"
                 android:layout_height="80dp"
                 android:layout_marginStart="20dp"
-                app:cardCornerRadius="10dp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:cardCornerRadius="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView10"
                 app:layout_constraintStart_toEndOf="@+id/cardView10"
                 app:layout_constraintTop_toTopOf="parent">
 
-                <TextView
-                    android:id="@+id/textView15"
+                <ImageView
+                    android:id="@+id/imageView15"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/syllabus" />
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/syllabus" />
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -181,15 +187,16 @@
                 android:layout_width="70dp"
                 android:layout_height="80dp"
                 android:layout_marginStart="10dp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:cardCornerRadius="12dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" >
+                app:layout_constraintTop_toTopOf="parent">
 
-                <TextView
-                    android:id="@+id/textView5"
+                <ImageView
+                    android:id="@+id/imageView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/courses" />
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/courses" />
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -197,16 +204,18 @@
                 android:layout_width="70dp"
                 android:layout_height="80dp"
                 android:layout_marginStart="20dp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:cardCornerRadius="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView5"
                 app:layout_constraintStart_toEndOf="@+id/cardView5"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" >
+                app:layout_constraintVertical_bias="0.0">
 
-                <TextView
-                    android:id="@+id/textView10"
+                <ImageView
+                    android:id="@+id/imageView8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/mentor" />
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/mentorship" />
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -214,15 +223,17 @@
                 android:layout_width="70dp"
                 android:layout_height="80dp"
                 android:layout_marginStart="20dp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:cardCornerRadius="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView6"
                 app:layout_constraintStart_toEndOf="@+id/cardView6"
-                app:layout_constraintTop_toTopOf="parent" >
+                app:layout_constraintTop_toTopOf="parent">
 
-                <TextView
-                    android:id="@+id/textView11"
+                <ImageView
+                    android:id="@+id/imageView10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/quizzes" />
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/quizes" />
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -230,16 +241,18 @@
                 android:layout_width="70dp"
                 android:layout_height="80dp"
                 android:layout_marginStart="20dp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:cardCornerRadius="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView7"
                 app:layout_constraintStart_toEndOf="@+id/cardView7"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" >
+                app:layout_constraintVertical_bias="0.0">
 
-                <TextView
-                    android:id="@+id/textView12"
+                <ImageView
+                    android:id="@+id/imageView11"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/animated" />
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/animated" />
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -247,16 +260,18 @@
                 android:layout_width="70dp"
                 android:layout_height="80dp"
                 android:layout_marginStart="20dp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:cardCornerRadius="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView8"
                 app:layout_constraintStart_toEndOf="@+id/cardView8"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" >
+                app:layout_constraintVertical_bias="0.0">
 
-                <TextView
-                    android:id="@+id/textView13"
+                <ImageView
+                    android:id="@+id/imageView12"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/community" />
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/community" />
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -264,16 +279,18 @@
                 android:layout_width="70dp"
                 android:layout_height="80dp"
                 android:layout_marginStart="20dp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:cardCornerRadius="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView9"
                 app:layout_constraintStart_toEndOf="@+id/cardView9"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" >
+                app:layout_constraintVertical_bias="0.0">
 
-                <TextView
-                    android:id="@+id/textView14"
+                <ImageView
+                    android:id="@+id/imageView14"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/doubt" />
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/doubt" />
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -281,15 +298,17 @@
                 android:layout_width="70dp"
                 android:layout_height="80dp"
                 android:layout_marginStart="20dp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:cardCornerRadius="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView3"
                 app:layout_constraintStart_toEndOf="@+id/cardView3"
-                app:layout_constraintTop_toTopOf="parent" >
+                app:layout_constraintTop_toTopOf="parent">
 
-                <TextView
-                    android:id="@+id/textView16"
+                <ImageView
+                    android:id="@+id/imageView16"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/help" />
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/help" />
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -297,16 +316,18 @@
                 android:layout_width="70dp"
                 android:layout_height="80dp"
                 android:layout_marginStart="20dp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:cardCornerRadius="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView11"
                 app:layout_constraintStart_toEndOf="@+id/cardView11"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" >
+                app:layout_constraintVertical_bias="0.0">
 
-                <TextView
-                    android:id="@+id/textView17"
+                <ImageView
+                    android:id="@+id/imageView17"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/testseries" />
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/testseries" />
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -314,16 +335,18 @@
                 android:layout_width="70dp"
                 android:layout_height="80dp"
                 android:layout_marginStart="20dp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:cardCornerRadius="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView12"
                 app:layout_constraintStart_toEndOf="@+id/cardView12"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" >
+                app:layout_constraintVertical_bias="0.0">
 
-                <TextView
-                    android:id="@+id/textView18"
+                <ImageView
+                    android:id="@+id/imageView18"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/progress" />
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/progress" />
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -331,16 +354,18 @@
                 android:layout_width="70dp"
                 android:layout_height="80dp"
                 android:layout_marginStart="20dp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:cardCornerRadius="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView13"
                 app:layout_constraintStart_toEndOf="@+id/cardView13"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" >
+                app:layout_constraintVertical_bias="0.0">
 
-                <TextView
-                    android:id="@+id/textView19"
+                <ImageView
+                    android:id="@+id/imageView19"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/save" />
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/save" />
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -348,16 +373,18 @@
                 android:layout_width="70dp"
                 android:layout_height="80dp"
                 android:layout_marginStart="20dp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:cardCornerRadius="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView14"
                 app:layout_constraintStart_toEndOf="@+id/cardView14"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" >
+                app:layout_constraintVertical_bias="0.0">
 
-                <TextView
-                    android:id="@+id/textView20"
+                <ImageView
+                    android:id="@+id/imageView20"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/progress" />
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/notes" />
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -365,16 +392,12 @@
                 android:layout_width="70dp"
                 android:layout_height="80dp"
                 android:layout_marginStart="20dp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:cardCornerRadius="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView15"
                 app:layout_constraintStart_toEndOf="@+id/cardView15"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" >
+                app:layout_constraintVertical_bias="0.0">
 
-                <TextView
-                    android:id="@+id/textView21"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/notes" />
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -382,15 +405,16 @@
                 android:layout_width="70dp"
                 android:layout_height="80dp"
                 android:layout_marginStart="20dp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView16"
                 app:layout_constraintStart_toEndOf="@+id/cardView16"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" >
+                app:layout_constraintVertical_bias="0.0">
 
                 <TextView
                     android:id="@+id/textView22"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
                     android:text="TextView" />
             </androidx.cardview.widget.CardView>
 
@@ -402,28 +426,348 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/cardView17"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" >
+                app:layout_constraintVertical_bias="0.0">
 
                 <TextView
                     android:id="@+id/textView23"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
                     android:text="TextView" />
             </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="@string/courses"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/cardView4"
+                app:layout_constraintStart_toStartOf="@+id/cardView4"
+                app:layout_constraintTop_toBottomOf="@+id/cardView4" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="@string/library"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/cardView5"
+                app:layout_constraintStart_toStartOf="@+id/cardView5"
+                app:layout_constraintTop_toBottomOf="@+id/cardView5" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="@string/mentor"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/cardView6"
+                app:layout_constraintStart_toStartOf="@+id/cardView6"
+                app:layout_constraintTop_toBottomOf="@+id/cardView6" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="@string/quizzes"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/cardView7"
+                app:layout_constraintStart_toStartOf="@+id/cardView7"
+                app:layout_constraintTop_toBottomOf="@+id/cardView7" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="@string/animated"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/cardView8"
+                app:layout_constraintStart_toStartOf="@+id/cardView8"
+                app:layout_constraintTop_toBottomOf="@+id/cardView8" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="@string/community"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/cardView9"
+                app:layout_constraintStart_toStartOf="@+id/cardView9"
+                app:layout_constraintTop_toBottomOf="@+id/cardView9" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="@string/doubt"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/cardView10"
+                app:layout_constraintStart_toStartOf="@+id/cardView10"
+                app:layout_constraintTop_toBottomOf="@+id/cardView10" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="@string/syllabus"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/cardView3"
+                app:layout_constraintStart_toStartOf="@+id/cardView3"
+                app:layout_constraintTop_toBottomOf="@+id/cardView3" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="@string/help"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/cardView11"
+                app:layout_constraintStart_toStartOf="@+id/cardView11"
+                app:layout_constraintTop_toBottomOf="@+id/cardView11" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="@string/testseries"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/cardView12"
+                app:layout_constraintStart_toStartOf="@+id/cardView12"
+                app:layout_constraintTop_toBottomOf="@+id/cardView12" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="@string/progress"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/cardView13"
+                app:layout_constraintStart_toStartOf="@+id/cardView13"
+                app:layout_constraintTop_toBottomOf="@+id/cardView13" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="@string/save"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/cardView14"
+                app:layout_constraintStart_toStartOf="@+id/cardView14"
+                app:layout_constraintTop_toBottomOf="@+id/cardView14" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="@string/notes"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/cardView15"
+                app:layout_constraintStart_toStartOf="@+id/cardView15"
+                app:layout_constraintTop_toBottomOf="@+id/cardView15" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="textview"
+                app:layout_constraintEnd_toEndOf="@+id/cardView16"
+                app:layout_constraintStart_toStartOf="@+id/cardView16"
+                app:layout_constraintTop_toBottomOf="@+id/cardView16" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </HorizontalScrollView>
 
     <ScrollView
         android:layout_width="390dp"
-        android:layout_height="240dp"
+        android:layout_height="220dp"
         app:layout_constraintBottom_toTopOf="@+id/cardView19"
         app:layout_constraintEnd_toEndOf="@+id/horizontalScrollView"
         app:layout_constraintStart_toStartOf="@+id/horizontalScrollView"
-        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" >
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="@+id/cardView31"
+                app:layout_constraintStart_toStartOf="@+id/cardView31"
+                app:layout_constraintTop_toBottomOf="@+id/cardView31" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="@+id/cardView30"
+                app:layout_constraintStart_toStartOf="@+id/cardView30"
+                app:layout_constraintTop_toBottomOf="@+id/cardView30" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="@+id/cardView29"
+                app:layout_constraintHorizontal_bias="0.508"
+                app:layout_constraintStart_toStartOf="@+id/cardView29"
+                app:layout_constraintTop_toBottomOf="@+id/cardView29" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView31"
+                android:layout_width="115dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="20dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView30"
+                app:layout_constraintStart_toEndOf="@+id/cardView30"
+                app:layout_constraintTop_toTopOf="@+id/cardView30" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView30"
+                android:layout_width="115dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="20dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView29"
+                app:layout_constraintStart_toEndOf="@+id/cardView29"
+                app:layout_constraintTop_toTopOf="@+id/cardView29" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView29"
+                android:layout_width="115dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/cardView19"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/see_all"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/textView2"
+                app:layout_constraintStart_toStartOf="@+id/textView2"
+                app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/syllabus_course"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/textView3"
+                app:layout_constraintStart_toStartOf="@+id/textView3"
+                app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="@+id/cardView28"
+                app:layout_constraintStart_toStartOf="@+id/cardView28"
+                app:layout_constraintTop_toBottomOf="@+id/cardView28" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="@+id/cardView27"
+                app:layout_constraintStart_toStartOf="@+id/cardView27"
+                app:layout_constraintTop_toBottomOf="@+id/cardView27" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="@+id/cardView19"
+                app:layout_constraintStart_toStartOf="@+id/cardView19"
+                app:layout_constraintTop_toBottomOf="@+id/cardView19" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView28"
+                android:layout_width="115dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="20dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView27"
+                app:layout_constraintStart_toEndOf="@+id/cardView27"
+                app:layout_constraintTop_toBottomOf="@+id/textView2"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView27"
+                android:layout_width="115dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="4dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView19"
+                app:layout_constraintEnd_toEndOf="@+id/textView2"
+                app:layout_constraintHorizontal_bias="0.113"
+                app:layout_constraintStart_toEndOf="@+id/cardView19"
+                app:layout_constraintTop_toBottomOf="@+id/textView3"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView19"
+                android:layout_width="115dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/textView2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView3"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
             <TextView
                 android:id="@+id/textView3"
@@ -431,6 +775,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:text="@string/syllabus_course"
+                android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -443,19 +788,266 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/see_all"
+                android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toEndOf="@+id/textView3"
                 app:layout_constraintTop_toTopOf="@+id/textView3"
                 app:layout_constraintVertical_bias="0.0" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView32"
+                android:layout_width="115dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView34"
+                android:layout_width="115dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="20dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView32"
+                app:layout_constraintStart_toEndOf="@+id/cardView32"
+                app:layout_constraintTop_toTopOf="@+id/cardView32" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView33"
+                android:layout_width="115dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="20dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView34"
+                app:layout_constraintStart_toEndOf="@+id/cardView34"
+                app:layout_constraintTop_toTopOf="@+id/cardView34" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/syllabus_course"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/textView28"
+                app:layout_constraintHorizontal_bias="0.54"
+                app:layout_constraintStart_toStartOf="@+id/textView28"
+                app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/see_all"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/textView29"
+                app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="@+id/cardView32"
+                app:layout_constraintStart_toStartOf="@+id/cardView32"
+                app:layout_constraintTop_toBottomOf="@+id/cardView32" />
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="@+id/cardView34"
+                app:layout_constraintStart_toStartOf="@+id/cardView34"
+                app:layout_constraintTop_toBottomOf="@+id/cardView34" />
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/cardView33"
+                app:layout_constraintTop_toBottomOf="@+id/cardView33" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView35"
+                android:layout_width="115dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView36"
+                android:layout_width="115dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="20dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView35"
+                app:layout_constraintStart_toEndOf="@+id/cardView35"
+                app:layout_constraintTop_toTopOf="@+id/cardView35" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView37"
+                android:layout_width="115dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="20dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView36"
+                app:layout_constraintStart_toEndOf="@+id/cardView36"
+                app:layout_constraintTop_toTopOf="@+id/cardView36" />
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/syllabus_course"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/textView33"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/see_all"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView34"
+                app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="@+id/cardView35"
+                app:layout_constraintStart_toStartOf="@+id/cardView35"
+                app:layout_constraintTop_toBottomOf="@+id/cardView35" />
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="@+id/cardView36"
+                app:layout_constraintStart_toStartOf="@+id/cardView36"
+                app:layout_constraintTop_toBottomOf="@+id/cardView36" />
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/cardView37"
+                app:layout_constraintTop_toBottomOf="@+id/cardView37" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView38"
+                android:layout_width="115dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView43" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView39"
+                android:layout_width="115dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="20dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView38"
+                app:layout_constraintStart_toEndOf="@+id/cardView38"
+                app:layout_constraintTop_toTopOf="@+id/cardView38" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView40"
+                android:layout_width="115dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="20dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView39"
+                app:layout_constraintStart_toEndOf="@+id/cardView39"
+                app:layout_constraintTop_toTopOf="@+id/cardView39" />
+
+            <TextView
+                android:id="@+id/textView43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/syllabus_course"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/textView38"
+                app:layout_constraintStart_toStartOf="@+id/textView38"
+                app:layout_constraintTop_toBottomOf="@+id/textView40" />
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/see_all"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/textView39"
+                app:layout_constraintStart_toStartOf="@+id/textView39"
+                app:layout_constraintTop_toBottomOf="@+id/textView42" />
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/cardView38"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView38" />
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="@+id/cardView39"
+                app:layout_constraintStart_toStartOf="@+id/cardView39"
+                app:layout_constraintTop_toBottomOf="@+id/cardView39" />
+
+            <TextView
+                android:id="@+id/textView47"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/cardView40"
+                app:layout_constraintTop_toBottomOf="@+id/cardView40" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView19"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
+        android:layout_height="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
